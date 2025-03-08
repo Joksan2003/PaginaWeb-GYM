@@ -1,0 +1,254 @@
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+
+}
+
+/* Estilos para el video de fondo */
+#video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Ajustes del header */
+.header {
+    background-color: rgba(18, 21, 26, 0.8); /* Hace el fondo del menú semi-transparente */
+    width: 100%;
+    height: 12%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del menú */
+#main {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+#main li {
+    font-size: 1.5vw;
+    display: inline-block;
+    text-align: center;
+    padding: 0.9vw 2vw;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: bold;
+    color: white;
+}
+
+#main li:hover {
+    background-color: #a56042;
+    border-radius: 20px;
+    color: black;
+}
+/* Estilo del contenedor para centrar el botón */
+.contenedor-boton {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo del botón */
+.btn-Empezar {
+    color: rgb(107, 107, 107);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-Empezar:hover {
+    color: white;
+    background-color: #a56042; /* Oscurece el color al pasar el mouse */
+    transform: scale(1.1); /* Hace un efecto de agrandamiento */
+}
+
+
+/*MODAL*/
+
+.modal {
+    display: none; /* Oculto al inicio */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente */
+}
+.wrapper {
+    width: 500px;
+    background: purple;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 1000;
+    
+  }
+  
+  .wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+  }
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffff;
+    padding: 20px 45px 20px 20px;
+  }
+  
+  .input-box input::placeholder {
+    color: #ffff;
+  }
+  
+  .input-box i {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+  
+  .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+  }
+  
+  .remember-forgot label input {
+    accent-color: #ffff;
+    margin-right: 3px;
+  }
+  .remember-forgot a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .remember-forgot a:hover {
+    text-decoration: underline;
+  }
+  
+  .Entrar{
+    width: 100%;
+    height: 45px;
+    background: #ffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  }
+  
+  .register-link p a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .register-link p a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/*FOOTER*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    background-color: #12151a;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    top: 100%;
+  }
+  .tabla3 {
+    margin: 0 auto;
+  }
+  
+  .tabla3 td {
+    vertical-align: middle;
+  }
+  
+  .tabla3 i {
+    font-size: 48px;
+    color: red;
+    border-radius: 20%;
+    background-color: #ffff;
+  }
+  
+  .tabla3 p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  .derechos {
+    margin-top: -30px;
+    font-size: 15px;
+    color: #ffff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+

@@ -1,0 +1,92 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif
+  
+}
+body {
+  min-height: 100vh;
+  background-color: rgba(71, 71, 71, 0.578);
+}
+
+/* CARD INTENSIDAD MEDIA */
+/* CONTENEDOR DE LAS TARJETAS */
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap; /* Permite adaptabilidad */
+  justify-content: center; /* Centra las tarjetas */
+  gap: 25px; /* Espaciado entre tarjetas */
+  margin-top: 20%;
+}
+
+/* CARD INTENSIDAD MEDIA */
+.card-Intensidad-Media {
+  width: 18%; /* Ajuste para que quepan 5 en la misma fila */
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  min-width: 200px; /* Evita que se hagan demasiado pequeñas */
+}
+
+.card-Intensidad-Media .image-box {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card-Intensidad-Media .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+/* Borde animado */
+.card-Intensidad-Media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+/* Ocultar contenido por defecto */
+.contenido {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;  /* Inicialmente oculto */
+  transition: opacity 0.7s ease-in-out;
+  border-radius: inherit;
+}
+
+/* Mostrar contenido y aplicar filtro al pasar el cursor */
+.card-Intensidad-Media:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card-Intensidad-Media:hover::after {
+  opacity: 1;
+  inset: 10px;
+}
+
+.card-Intensidad-Media:hover .contenido {
+  opacity: 1;
+}
+

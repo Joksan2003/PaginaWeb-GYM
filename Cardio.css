@@ -1,0 +1,274 @@
+/* Ajustes generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif
+  
+}
+body {
+  min-height: 100vh;
+  background-color: rgba(71, 71, 71, 0.578);
+  justify-content: center;
+  align-items: center;
+}
+
+    
+
+/* Ajustes del header */
+.header {
+    background-color: rgba(18, 21, 26, 0.8); /* Hace el fondo del menú semi-transparente */
+    width: 100%;
+    height: 12%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del menú */
+#main {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+#main li {
+    font-size: 1.5vw;
+    display: inline-block;
+    text-align: center;
+    padding: 0.9vw 2vw;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: bold;
+    color: white;
+}
+
+#main li:hover {
+    background-color: #a56042;
+    border-radius: 20px;
+    color: black;
+}
+
+
+/*
+.Cardio_principal{
+    margin-top: 10%;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    border-radius: 5%;
+    margin-left: 2%;
+    padding: 1%;
+    display: flex;
+}
+.Cardio_principal .Cardio{
+    font-size: 4rem;
+    
+}
+.Cardio_principal  p{
+    font-size: 2rem;
+}
+.Cardio_principal:hover{
+    background-color: #545454;
+}*/
+/* Contenedor principal que alinea el texto y la imagen */
+.Cardio_contenedor {
+    display: flex; /* Coloca los elementos en fila */
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    max-width: 90%; /* Para que no ocupe toda la pantalla */
+    margin: 10% auto 0 auto;
+    gap: 2%; /* Espacio entre el texto y la imagen */
+    background-color: rgb(186, 186, 186);
+    padding: 3%;
+    border-radius: 40px;
+}
+
+/* Estilos para el texto */
+.Cardio_principal {
+    flex: 1; /* Ocupa la mitad del espacio */
+    max-width: 50%; /* Limita el ancho del texto */
+    
+}
+
+.Cardio_principal h1 {
+    font-size: 5rem;
+    color: #000000;
+    line-height: .9;
+}
+
+.Cardio_principal p {   
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Estilos para la imagen */
+.Cardio_imagen {
+    flex: 1; /* Ocupa la otra mitad del espacio */
+    max-width: 80%; /* Limita el ancho de la imagen */
+    display: flex;
+    justify-content: center;
+}
+
+.Cardio_imagen img {
+    width: 100%; /* Ajusta la imagen al contenedor */
+    max-width: 580px; /* Tamaño máximo de la imagen */
+    border-radius: 30px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out;
+}
+
+.Cardio_imagen img:hover {
+    transform: scale(1.1); /* Se agranda y gira levemente */
+}
+
+/*TITULOS*/
+.Titulo{
+  margin: 30px;
+  text-align: center;
+}
+
+/*CONTENEDOR Cardio de Baja Intensidad (Principiantes o recuperación) */
+.container-Ejercicios {
+  display: flex;
+  height: 32vh;
+  margin: 2%;
+  background-color: rgb(186, 186, 186);
+  border-radius: 40px;
+}
+
+.item{
+  background-color: red;
+  border-radius: 25px;
+  margin: 25px;
+  flex: 1;
+}
+.img-Ejercicios{
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+ }
+
+.intro{
+  height: 70px;
+  width: 240px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  background: rgb(27, 27, 27,0.5);
+  border-radius: 15px;
+  top: 935px;
+  transition: .4s;
+}
+
+.h1-Ejercicios{
+  margin: 10px;
+  font-size: 25px;
+  color: white;
+}
+.p-Ejercicios{
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.item:hover{
+  cursor: pointer;
+}
+.item:hover .intro{
+  height: 220px;
+  top: 790px;
+  background: white; 
+  transform: scale(1.1);
+}
+.item:hover .p-Ejercicios{
+  opacity: 1;
+  visibility: visible;
+  transition: 1.8s;
+  color: black;
+}
+
+.item:hover .h1-Ejercicios{
+  opacity: 1;
+  visibility: visible;
+  transition: 1.8s;
+  color: black;
+}
+.item:hover .img-Ejercicios{
+  transform: scale(1.1);
+  transition: .8s;
+}
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*FOOTER*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    background-color: #12151a;
+    color: white;
+    text-align: center;
+    top: 200vh;
+  }
+  .tabla3 {
+    margin: 0 auto;
+  }
+  
+  .tabla3 td {
+    vertical-align: middle;
+  }
+  
+  .tabla3 i {
+    font-size: 48px;
+    color: red;
+    border-radius: 20%;
+    background-color: #ffff;
+  }
+  
+  .tabla3 p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  .derechos {
+    margin-top: -30px;
+    font-size: 15px;
+    color: #ffff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card__article:hover .card__data {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.card__article .card__data:hover {
+    opacity: 5;
+}

@@ -1,0 +1,177 @@
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+    
+}
+body {
+    min-height: 200vh;
+    /*background-image: url('Gym_Fondo_Imagen.jpeg');
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    background-size: contain ; 
+    margin: 0;
+    */
+    background-color: rgba(71, 71, 71, 0.578);
+}
+
+    
+
+/* Ajustes del header */
+.header {
+    background-color: rgba(18, 21, 26, 0.8); /* Hace el fondo del menú semi-transparente */
+    width: 100%;
+    height: 12%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del menú */
+#main {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+
+#main li {
+    font-size: 1.5vw;
+    display: inline-block;
+    text-align: center;
+    padding: 0.9vw 2vw;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-weight: bold;
+    color: white;
+}
+
+#main li:hover {
+    background-color: #a56042;
+    border-radius: 20px;
+    color: black;
+}
+
+/*BIENVENIDA*/
+.divBienvenida{
+    margin-top: 10%;
+    width: 100%;
+    z-index: 2;
+
+}
+.Bienvenida{
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.Titulo{
+  margin-top: 9%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.contenedor-prueba{
+  background-color: red;
+  height: 70VH;
+  width: 100%;
+}
+
+
+
+
+
+/*FOOTER*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    background-color: #12151a;
+    color: white;
+    text-align: center;
+    top: 200vh;
+  }
+  .tabla3 {
+    margin: 0 auto;
+  }
+  
+  .tabla3 td {
+    vertical-align: middle;
+  }
+  
+  .tabla3 i {
+    font-size: 48px;
+    color: red;
+    border-radius: 20%;
+    background-color: #ffff;
+  }
+  
+  .tabla3 p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  .derechos {
+    margin-top: -30px;
+    font-size: 15px;
+    color: #ffff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+/*APPLE*/
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  flex-wrap: wrap;
+  height: 90vh;
+  padding: 0;
+  margin: 1.5%;
+}
+
+.item:nth-child(1),
+.item:nth-child(5),
+.item:nth-child(7) {
+  height: 32%;
+  width: 40%;
+  background-color: red;
+  border-radius: 5%;
+}
+
+.item:nth-child(2),
+.item:nth-child(8) {
+  height: 32%;
+  width: 30%;
+  background-color: blue;
+  border-radius: 5%;
+}
+
+.item:nth-child(3),
+.item:nth-child(6),
+.item:nth-child(9) {
+  height: 32%;
+  flex-grow: 1;
+  background-color: yellow;
+  border-radius: 5%;
+}
+
+.item:nth-child(4) {
+  height: 32%;
+  width: 25%;
+  background-color: green;
+  border-radius: 5%;
+}
